@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="utf-8">
+     	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+     	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<title>Survey Form</title>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+</head>
+<body>
+
+
+		<div id="title">
+			<h1>SURVEY FORM</h1>
+			
+		</div>
+
+
+				<!-- FORM -->
+
+		<form id="Survey-form">
+
+			<p id="description" style="text-align: center;">
+    			Let us know how we can improve freeCodeCamp
+  			</p>
+
+  			<div class="form-group">
+    			<label for="inputName">* Name: </label>
+    				<input type="text" class="form-control" id="inputName"required placeholder="Name" required>
+    					
+  			</div>
+
+  			<div class="form-group">
+    			<label for="inputEmail1">* Email address: </label>
+    				<input type="email" class="form-control" id="inputEmail1" aria-describedby="		emailHelp" placeholder="Enter email" required>
+    					<small id="emailHelp" class="form-text text-muted"></small>
+  			</div>
+
+  			<div class="form-group">
+    			<label for="inputAge">* Age: </label>
+    				<input type="number" class="form-control" id="inputAge" placeholder="Age" min="1" max="125" required>
+    					
+  			</div>
+
+
+  			<div class="form-group">
+     		   <label for="currentPosition">* Which option best describes your current role?:</label>
+      				<select class="form-control" id="dropdown" name="currentPosition" required>
+      					<option disabled selected value>Select an option</option>
+       					 <option value="student">Student</option>
+       					 <option value="job">Full Time job</option>
+       					 <option value="job">Part Time job</option>
+        				 <option value="learner">Full Time Learner</option>
+        				 <option value="preferNo">Prefer Not To Say</option>
+        				 <option value="others">Others</option>
+      				</select>
+
+      		</div>
+
+      		<div class="labels">
+       			 <label for="userRating">* How likely is that you would recommend freeCodeCamp to a friend?</label>
+      		</div>
+
+      		<div class="radio">
+  				<label><input type="radio" name="radio" required> Definetely </label>
+			</div>
+
+			<div class="radio">
+ 				 <label><input type="radio" name="radio" required> Maybe </label>
+			</div>
+
+			<div class="radio">
+ 				 <label><input type="radio" name="radio" required> Not Sure </label>
+			</div>
+
+			</div><br>
+
+
+			<div class="form-group">
+     		   <label for="mostLike">* What do you like most in FreeCodeCamp?:</label>
+      				<select class="form-control" id="mostLike" name="mostlike">
+      					<option disabled selected value>Select an option</option>
+       					 <option value="student">Student</option>
+       					 <option value="job">Full Time job</option>
+       					 <option value="job">Part Time job</option>
+        				 <option value="learner">Full Time Learner</option>
+        				 <option value="preferNo">Prefer Not To Say</option>
+        				 <option value="others">Others</option>
+      				</select>
+
+      		</div>
+      		<br>
+
+
+
+
+      		<div class="labels">
+       			 <label for="userRating">* Things that should be improved in the future (Check all that apply):</label>
+      		</div>
+
+      		<div class="form-check">
+  				<label class="form-check-label">
+    				<input type="checkbox" class="form-check-input" value="1" required>Front-End Projects
+  				</label>
+			</div>
+
+			<div class="form-check">
+  				<label class="form-check-label">
+  				  	<input type="checkbox" class="form-check-input" value="2">Back-End Projects
+  				</label>
+			</div>
+			<div class="form-check">
+			  	<label class="form-check-label">
+			   		 <input type="checkbox" class="form-check-input" value="3">Data Visualization
+			  	</label>
+			</div>
+
+			<div class="form-check">
+  				<label class="form-check-label">
+    				<input type="checkbox" class="form-check-input" value="4">Open Source
+  				</label>
+			</div>
+
+			<div class="form-check">
+  				<label class="form-check-label">
+  				  	<input type="checkbox" class="form-check-input" value="5">Challenges
+  				</label>
+			</div>
+
+			<div class="form-check">
+			  	<label class="form-check-label">
+			   		 <input type="checkbox" class="form-check-input" value="6">Videos
+			  	</label>
+			</div>
+			<br>
+
+
+			<div class="form-group">
+    			<label for="textarea">Any Comments Or Suggestions:</label>
+    				<textarea class="form-control" id="textarea" rows="5" placeholder="Enter your comments or suggestion here"></textarea>
+  			</div>
+  			<br>
+
+  		<div class="col-12 text-center">
+ 		<button type="submit" class="btn btn-primary" id="submit">Submit</button>
+ 		</div>
+
+
+		</form>
+
+
+
+
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		
+</body>
+</html>

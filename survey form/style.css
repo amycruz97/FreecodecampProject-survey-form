@@ -1,0 +1,30 @@
+body{
+	background: 	#C0C0C0;
+	font-family: 'Roboto', sans-serif;
+
+}
+
+#title{
+	color: black;
+	text-align: center;
+	margin-top: 50px;
+}
+
+form{
+	background: white;
+	margin: 0 auto !important;
+	border-radius: 10px;
+	width: 85%;
+	padding: 20px;
+	padding-top: 20px;
+	max-width: 900px;
+	color: black;
+}
+
+
+#submit{
+	align-items: center;
+	
+
+
+}
